@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RALLY POR LA LUZ — Concurso estudiantil de biofotónica</title>
+  <meta name="description" content="RALLY POR LA LUZ: concurso estudiantil para fomentar el conocimiento en biofotónica, en el marco del Seminario Internacional de Ciencias y Tecnologías Biomédicas – PRIS. Organizado por el INAOE en colaboración con la Universidad de Costa Rica." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="RALLY POR LA LUZ — Concurso estudiantil de biofotónica" />
+  <meta property="og:description" content="Participa en retos, visitas a laboratorios y mesas de debate. ¡Inscríbete!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://TU_USUARIO.github.io/TU_REPO/" />
+  <meta property="og:image" content="https://TU_USUARIO.github.io/TU_REPO/img/og-image.jpg" />
+
+  <style>
+    :root{
+      --bg:#0b172a; --fg:#ffffff; --muted:#c7d2fe;
+      --card:#ffffff; --text:#1f2937; --sub:#6b7280;
+      --pri:#1a73e8; --pri-700:#1557b0; --ring:#93c5fd;
+      --radius:14px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 600px at 10% 0%, #0b172a 0%, #0b172a 30%, #10284d 60%, #0b172a 100%),
+        #0b172a;
+    }
+    a{color:var(--pri)}
+    .page{display:flex; flex-direction:column; min-height:100vh}
+    .wrap{max-width:1100px; margin:0 auto; padding:0 20px}
+
+    /* HERO */
+    header.hero{color:var(--fg); text-align:center; padding:72px 20px 36px}
+    .badge{
+      display:inline-flex; gap:8px; align-items:center;
+      background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.25);
+      padding:8px 12px; border-radius:999px; font-weight:600; backdrop-filter: blur(6px);
+    }
+    h1{margin:18px auto 10px; max-width:900px; line-height:1.15; font-size:clamp(28px,4.2vw,48px)}
+    .subtitle{margin:0 auto 22px; max-width:900px; color:var(--muted); font-size:clamp(16px,2.2vw,20px)}
+    .pills{display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin:10px 0 26px}
+    .pill{background:#fff; color:#0b172a; border-radius:999px; padding:10px 14px; font-weight:600; border:2px solid #e5e7eb}
+
+    .cta{
+      display:inline-block; padding:14px 22px; border-radius:12px; text-decoration:none;
+      background:linear-gradient(180deg, var(--pri), var(--pri-700)); color:#fff; font-weight:700;
+      box-shadow:0 10px 30px rgba(26,115,232,.35); transition: transform .12s ease, filter .12s ease;
+    }
+    .cta:hover{transform:translateY(-1px); filter:brightness(1.05)}
+    .cta:focus{outline:3px solid var(--ring); outline-offset:3px}
+
+    /* CARD + GRID */
+    .card{background:var(--card); border-radius:var(--radius); box-shadow:0 10px 35px rgba(0,0,0,.18); padding:28px; margin: -14px auto 40px}
+    .grid{display:grid; gap:22px; grid-template-columns:1fr}
+    @media (min-width: 900px){ .grid{grid-template-columns: 1.2fr .8fr} }
+    .section h2{margin:0 0 10px; font-size:22px}
+    .section p{color:var(--sub); margin:0 0 12px}
+    .list{margin:0; padding-left:18px; color:#374151}
+    .box{background:#f8fafc; border:1px solid #e5e7eb; border-radius:12px; padding:14px}
+
+    .logos{display:flex; gap:16px; align-items:center; flex-wrap:wrap; margin-top:12px}
+    .logos img{height:48px; object-fit:contain; background:#fff; border-radius:10px; padding:6px; border:1px solid #e5e7eb}
+
+    footer{color:#c7d2fe; text-align:center; font-size:14px; padding:22px 14px 40px}
+
+    @media (prefers-reduced-motion: reduce){ .cta{transition:none} }
+    a.skip{position:absolute; left:-9999px}
+    a.skip:focus{left:16px; top:16px; background:#fff; color:#000; padding:8px 12px; border-radius:8px}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <div class="page">
+    <!-- HERO -->
+    <header class="hero" role="banner">
+      <div class="wrap">
+        <span class="badge">Concurso estudiantil • Biofotónica</span>
+        <h1>RALLY POR LA LUZ</h1>
+        <p class="subtitle">1er concurso para fomentar el conocimiento en el área de biofotónica, en el marco del Seminario Internacional de Ciencias y Tecnologías Biomédicas – PRIS. Organizado por el <strong>INAOE</strong> en colaboración con la <strong>Universidad de Costa Rica</strong>.</p>
+
+        <!-- Ajusta fechas/ubicación si ya están definidas -->
+        <div class="pills" aria-label="Datos clave del evento">
+          <span class="pill">Fechas: por confirmar</span>
+          <span class="pill">Sede: INAOE, Tonantzintla, Puebla (MX)</span>
+          <span class="pill">Modalidad presencial</span>
+        </div>
+
+        <a class="cta" href="formulario_rally_por_la_luz_2025.html" aria-label="Ir al formulario de registro">Inscríbete</a>
+      </div>
+    </header>
+
+    <!-- CONTENIDO -->
+    <main id="contenido" class="wrap card" role="main">
+      <div class="grid">
+        <section class="section">
+          <h2>¿Qué es el Rally por la Luz?</h2>
+          <p>Es un <strong>concurso por equipos</strong> para acercar a estudiantes a la biofotónica mediante <strong>retos interactivos</strong>, <strong>visitas a laboratorios</strong> y <strong>mesas de debate</strong>. A lo largo de varias estaciones, los equipos resuelven actividades que combinan creatividad y ciencia.</p>
+
+          <h2>¿Quiénes pueden participar?</h2>
+          <ul class="list">
+            <li>Estudiantes de <strong>nivel medio superior</strong> y <strong>licenciatura</strong>.</li>
+            <li>Perfiles sugeridos: biomedicina, biología, biotecnología, computación, electrónica, psicología, ciencias de la salud, física, matemáticas, y áreas afines. <em>No hay exclusión por otras formaciones.</em></li>
+            <li>Cupo limitado. Los equipos se conforman en el evento.</li>
+          </ul>
+
+          <h2>Programa (tentativo)</h2>
+          <div class="box">
+            <p><strong>Día 1 — Estaciones</strong>: concurso por equipos con ~10 estaciones y retos (anagramas, experimentos didácticos, etc.).</p>
+            <p><strong>Día 2 — Laboratorios & Debate</strong>: visitas a la LGAC de Biofotónica + mesas de debate para defender el conocimiento adquirido.</p>
+            <p><strong>Día 3 — Premiación</strong>: se reconoce al equipo con mayor puntaje acumulado.</p>
+          </div>
+
+          <h2>Bases generales</h2>
+          <ul class="list">
+            <li>El comité organizador regula actividades y evaluaciones; sus decisiones son inapelables.</li>
+            <li>Es deseable contar con un dispositivo para consulta en internet.</li>
+            <li>Compromiso con las reglas del concurso y la convivencia.</li>
+          </ul>
+
+          <h2>Hospedaje</h2>
+          <p>Para fomentar la participación de instituciones fuera de la zona conurbada de Puebla, se ofrecerá <strong>hospedaje por dos noches</strong> (sujeto a disponibilidad y dictamen del comité). Solicítalo en el formulario de registro.</p>
+
+          <p style="margin-top:18px">
+            <a class="cta" href="formulario_rally_por_la_luz_2025.html">Inscribirme ahora</a>
+          </p>
+        </section>
+
+        <aside class="section" aria-label="Inscripción y contacto">
+          <h2>Inscripción</h2>
+          <p>El registro se realiza en línea. Completa el formulario y recibirás confirmación por correo.</p>
+          <ul class="list">
+            <li>Fecha límite de registro: <strong>por confirmar</strong>.</li>
+            <li>Confirmación y logística: vía correo a las y los participantes aceptados.</li>
+          </ul>
+
+          <h2>Contacto</h2>
+          <p>¿Dudas? Escríbenos a <a href="mailto:elvis@inaoep.mx">elvis@inaoep.mx</a>.</p>
+
+          <h2>Organizan</h2>
+          <div class="logos">
+            <!-- Sustituye por tus rutas reales -->
+            <img src="img/logo-inaoe.png" alt="INAOE" />
+            <img src="img/logo-ucr.png" alt="Universidad de Costa Rica" />
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <p>© <span id="y"></span> Rally por la Luz • INAOE &amp; Universidad de Costa Rica • Sitio informativo del concurso.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // año automático en el pie
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
