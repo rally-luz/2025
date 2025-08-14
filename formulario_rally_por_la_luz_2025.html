@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Rally por la Luz 2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .form-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .welcome {
+            text-align: center;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #333;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #hospedaje-instruction {
+            display: none;
+            color: #d32f2f;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Rally por la Luz 2025</h1>
+        <p class="welcome">¡Bienvenidos al Rally por la Luz, Edición 2025! Estamos emocionados de contar con su participación. Por favor, complete el siguiente formulario para registrarse.</p>
+        <form action="https://formsubmit.co/anyel.garcia@inaoe.mx" method="POST">
+            <label for="nombre">Nombre(s):</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="telefono">Número de celular o WhatsApp:</label>
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="Ejemplo: 1234567890" required>
+
+            <label for="estado">¿Desde qué estado nos visita?</label>
+            <select id="estado" name="estado" required>
+                <option value="" disabled selected>Seleccione un estado</option>
+                <option value="Aguascalientes">Aguascalientes</option>
+                <option value="Baja California">Baja California</option>
+                <option value="Baja California Sur">Baja California Sur</option>
+                <option value="Campeche">Campeche</option>
+                <option value="Chiapas">Chiapas</option>
+                <option value="Chihuahua">Chihuahua</option>
+                <option value="Ciudad de México">Ciudad de México</option>
+                <option value="Coahuila">Coahuila</option>
+                <option value="Colima">Colima</option>
+                <option value="Durango">Durango</option>
+                <option value="Estado de México">Estado de México</option>
+                <option value="Guanajuato">Guanajuato</option>
+                <option value="Guerrero">Guerrero</option>
+                <option value="Hidalgo">Hidalgo</option>
+                <option value="Jalisco">Jalisco</option>
+                <option value="Michoacán">Michoacán</option>
+                <option value="Morelos">Morelos</option>
+                <option value="Nayarit">Nayarit</option>
+                <option value="Nuevo León">Nuevo León</option>
+                <option value="Oaxaca">Oaxaca</option>
+                <option value="Puebla">Puebla</option>
+                <option value="Querétaro">Querétaro</option>
+                <option value="Quintana Roo">Quintana Roo</option>
+                <option value="San Luis Potosí">San Luis Potosí</option>
+                <option value="Sinaloa">Sinaloa</option>
+                <option value="Sonora">Sonora</option>
+                <option value="Tabasco">Tabasco</option>
+                <option value="Tamaulipas">Tamaulipas</option>
+                <option value="Tlaxcala">Tlaxcala</option>
+                <option value="Veracruz">Veracruz</option>
+                <option value="Yucatán">Yucatán</option>
+                <option value="Zacatecas">Zacatecas</option>
+            </select>
+
+            <label for="institucion">¿A qué institución pertenece?</label>
+            <input type="text" id="institucion" name="institucion" required>
+
+            <label for="nivel_academico">Nivel académico:</label>
+            <select id="nivel_academico" name="nivel_academico" required>
+                <option value="" disabled selected>Seleccione un nivel</option>
+                <option value="Secundaria">Secundaria</option>
+                <option value="Preparatoria">Preparatoria</option>
+                <option value="Licenciatura o Ingeniería">Licenciatura o Ingeniería</option>
+                <option value="Maestría">Maestría</option>
+                <option value="Doctorado">Doctorado</option>
+                <option value="Posdoctorado">Posdoctorado</option>
+            </select>
+
+            <label for="hospedaje">¿Necesita lugar de hospedaje durante los días del rally? (Solo aplica si viene de fuera de Puebla)</label>
+            <select id="hospedaje" name="hospedaje" required onchange="mostrarInstruccionHospedaje()">
+                <option value="" disabled selected>Seleccione una opción</option>
+                <option value="No">No</option>
+                <option value="Sí">Sí</option>
+            </select>
+
+            <p id="hospedaje-instruction">Si necesita hospedaje, por favor envíe un correo a <a href="mailto:elvis@inaoep.mx">elvis@inaoep.mx</a> con su solicitud.</p>
+
+            <button type="submit">Enviar Registro</button>
+        </form>
+    </div>
+
+    <script>
+        function mostrarInstruccionHospedaje() {
+            const hospedaje = document.getElementById('hospedaje').value;
+            const instruccion = document.getElementById('hospedaje-instruction');
+            if (hospedaje === 'Sí') {
+                instruccion.style.display = 'block';
+            } else {
+                instruccion.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
