@@ -49,10 +49,17 @@
     <h1>Rally por la Luz 2025</h1>
     <p class="welcome">Completa el formulario para registrarte. Recibirás confirmación por correo.</p>
 
-    <form action="https://formsubmit.co/anyel.garcia@inaoe.mx" method="POST">
-      <!-- Opciones ocultas (opcional) -->
+    <form action="https://formsubmit.co/anyel.garcia@inaoe.mx"
+          method="POST"
+          accept-charset="UTF-8"
+          enctype="application/x-www-form-urlencoded">
+      <!-- Opciones ocultas -->
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_subject" value="Nuevo registro: Rally por la Luz 2025">
+      <!-- Redirección a página propia de gracias (URL absoluta) -->
+      <input type="hidden" name="_next" value="https://rally-luz.github.io/gracias.html">
+      <!-- Autorespuesta al participante -->
+      <input type="hidden" name="_autoresponse" value="¡Gracias por registrarte en el Rally por la Luz! Hemos recibido tu información. Te contactaremos con detalles logísticos cuando se acerque la fecha.">
 
       <label for="nombre">Nombre(s):</label>
       <input type="text" id="nombre" name="nombre" required>
@@ -131,6 +138,3 @@
   </script>
 </body>
 </html>
-
-
-
